@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(60, 61, 70);
+    font-family: 'segoe ui';
+
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+}
+p, a {
+    color: #ccc;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    height: auto;
+    max-width: 200px;
+}
+
+.hamburguer {
+    display: none;
+}
+
+nav {
+    margin-bottom: 16px;
+    padding: 0px 64px;
+    width: 100%;
+    height: 120px;
+
+    background-color: rgb(170, 54, 9);
+
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 0px 16px;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: #eee;
+}
+
+.home {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .text-wrap {
+    width: 500px;
+    font-size: 20px;
+
+    color: rgb(170, 54, 9);
+    word-wrap: break-word;
+
+}
+
+.home .buttons {
+    height: 100%;
+    font-size: 20px;
+
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons a {
+    margin: 10px 0;
+    padding: 10px 32px;
+    background-color: rgb(170, 54, 9);
+    border-radius: 6px;
+}
+
+.buttons a:hover {
+    background-color:rgb(139, 29, 93);
+}
+
+.characters {
+    padding: 32px 32px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(75, 77, 92);
+}
+
+.characters h1{
+    margin: 0 0 32px 0;
+    padding-bottom: 24px;
+    color:rgb(170, 54, 9);
+    text-align: center;
+    border-bottom: 4px solid rgb(170, 54, 9);
+}
+
+.characters main article {
+    margin-bottom: 16px;
+    padding: 16px 16px;
+    font-size: 20px;
+
+    background-color: rgb(60, 61, 70);
+    border-radius: 24px;
+    display: flex;
+}
+
+.characters main article:hover {
+    background-color: rgb(41, 42, 48);
+}
+
+article .portrait {
+    text-align: center;
+}
+
+article .portrait img {
+    border-radius: 24px;
+}
+
+article .portrait h2 {
+    margin: 8px 0;
+    color: rgb(170, 54, 9);
+    font-size: 24px;
+
+}
+
+article p {
+    padding: 0 32px;
+}
+
+.about {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(60, 61, 70);
+}
+
+.about main {
+    height: 100%;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about p {
+    font-size: 16px;
+}
+
+.icon {
+    color: #ccc;
+}
+
+.icon:hover {
+    color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+    section, nav {
+        padding: 16px;
+    }
+    .hamburguer {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .hamburguer a {
+        float: right;
+    }
+
+    header nav {
+        padding: 8px 16px;
+        height: auto;
+        position: fixed;
+        z-index: 999;
+    }
+    header nav img {
+        display: none;
+    }
+    header nav ul {
+        display: none;
+    }
+
+    .home {
+        height: auto;
+        display: block;
+    }
+
+    .home .text-wrap {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .text-wrap h2 {
+        text-align: center;
+    }
+
+    .home .buttons {
+        height: auto;
+    }
+
+    .characters {
+        padding-top: 48px;
+    }
+
+    .characters main article {
+        display: block;
+    }
+
+    .description {
+        padding: 0 12px;
+        font-size: 16px;
+    }
+
+    .about main {
+        font-size: 52px;
+    }
+}
